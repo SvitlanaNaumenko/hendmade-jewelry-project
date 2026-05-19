@@ -1,9 +1,67 @@
+:root {
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-gray: #f2f2f2;
+  --clr-gold: #ccc16e;
+  --clr-purple: #8668c7;
+  --clr-red: #8c0000;
+  --opacity-neutral-darkest-15: rgba(0, 0, 0, 0.15);
+  --opacity-neutral-darkest-20: rgba(0, 0, 0, 0.2);
+  --opacity-neutral-darkest-30: rgba(0, 0, 0, 0.3);
+
+  /* Фон */
+  --bg-main: var(--clr-white);
+  --bg-section: var(--clr-gray);
+  --bg-card: var(--clr-white);
+  --bg-accent: var(--clr-white);
+  --bg-overlay: var(--clr-white);
+
+  /* Текст */
+  --text-main: var(--clr-black);
+  --text-title: var(--clr-black);
+  --text-secondary: var(--clr-black);
+  --text-accent: var(--clr-black);
+  --text-error: var(--clr-red);
+  --text-link-active: var(--clr-purple);
+  --text-link-inactive: var(--opacity-neutral-darkest-30);
+
+  /* Елементи */
+  --border-main: var(--opacity-neutral-darkest-15);
+  --border-accent: var(--clr-gold);
+  --border-form: var(--opacity-neutral-darkest-20);
+  --border-section: var(--opacity-neutral-darkest-20);
+  --border-error: var(--clr-red);
+  --btn-bg: var(--clr-gold);
+  --btn-text: var(--clr-black);
+  --btn-border: var(--clr-gold);
+  --btn-bg-ghost: var(--clr-gold);
+  --btn-text-ghost: var(--clr-black);
+  --btn-border-ghost: var(--clr-gold);
+
+  /* Шрифти (Fonts Families) */
+  --font-main: 'Mulish', sans-serif;
+  --font-second: 'Sora', sans-serif;
+
+  /* Накреслення шрифту (Font Weights) */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  font-family: var(--font-main);
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-main);
+  background-color: var(--bg-main);
 }
 
 section {
